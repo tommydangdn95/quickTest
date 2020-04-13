@@ -1,35 +1,34 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
     class Program
     {
-        //static void Main(string[] args)
-        //{
-        //    var result1 = Task<int>.Factory.StartNew(() =>
-        //    {
-        //        return returnValue(10,11,12);
-        //    });
-        //    var result2 = Task<int>.Factory.StartNew(() =>
-        //    {
-        //        return returnValue(20,21,22);
-        //    });
-        //    var result3 = Task<int>.Factory.StartNew(() =>
-        //    {
-        //        return returnValue(30,31,32);
-        //    });
-        //}
+        static void Main(string[] args)
+        {
+            //var listinter = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //foreach (var i in listinter)
+            //{
+            //    int temp = i;
+            //    Task.Factory.StartNew(() => Console.WriteLine(temp));
+            //}
 
-        //static int returnValue(int value1, int value2, int value3)
-        //{
+            //for(int i = 0; i < listinter.Count;i++)
+            //{
+            //    int temp = i;
+            //    Task.Factory.StartNew(() => Console.WriteLine(temp));
+            //}
 
+            for (int i = 0; i < 10; i++)
+            {
+                int toCaptureI = i;
+                Task.Factory.StartNew(() => Console.WriteLine(toCaptureI));
+            }
+            Console.ReadLine();
 
-        //}
-
-        //static int GetSum()
-        //{   
-            
-        //}
+            //Console.ReadLine();
+        }
     }
 }
